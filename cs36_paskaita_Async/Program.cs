@@ -15,8 +15,10 @@ namespace cs36_paskaita_Async
 
             #endregion
 
-            Solution_01_Run();
-        
+            //Solution_01_Run();
+            Solution_02_Run();
+
+
         }
         public static void Solution_01_Run()
         {
@@ -24,9 +26,17 @@ namespace cs36_paskaita_Async
             //     ir vykdyti ciklą, kuris didintų progress lauko reikšmę vienetu kas sekundę, tol
             //     kol reikšmė pasiekia 100.
             var progressBar = new ProgressBar(0);
-            Solution_01.Counting(progressBar);
-            Solution_01.Printing(progressBar);
-            Console.ReadKey();
+            Solution_01.CountingAsync(progressBar);
+            Solution_01.PrintingAsync(progressBar);
+            Console.ReadKey(); // <-- Be šito niekas nebeveikia
+
+        }
+
+        public static void Solution_02_Run()
+        {
+            //Solution_02.DesktopContentPrinting();
+            Solution_02.DesktopContentPrintingAsync();
+            Console.ReadKey(); // <-- Be šito niekas nebeveikia
         }
     }
 }

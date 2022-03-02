@@ -14,7 +14,7 @@ namespace cs36_paskaita_Async
         //     kol reikšmė pasiekia 100.
         // (3) Sukurkite kitą giją, kuri kas 3 sekundes į konsolę išvestų ProgressBar objekto,
         //     progress lauko reikšmę, tol, kol programa veikia.
-        public static async Task Counting(ProgressBar progressBar)
+        public static async Task CountingAsync(ProgressBar progressBar)
         {
             await Task.Run(() =>
             {
@@ -27,7 +27,7 @@ namespace cs36_paskaita_Async
             });
         }
 
-        public static async Task Printing(ProgressBar progressBar)
+        public static async Task PrintingAsync(ProgressBar progressBar)
         {
             // (3) Sukurkite kitą giją, kuri kas 3 sekundes į konsolę išvestų ProgressBar objekto,
             //     progress lauko reikšmę, tol, kol programa veikia.
