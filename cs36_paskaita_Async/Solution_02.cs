@@ -14,7 +14,10 @@ namespace cs36_paskaita_Async
         public static void DesktopContentPrinting()
         {
             // @"C:\Users\Vytautas\Desktop"
-            string[] allFiles = Directory.GetFiles(@"C:\Users\Vytautas\Desktop", "*.*", SearchOption.AllDirectories);
+            // @"/Users/surkus/Desktop"
+
+            //string[] allFiles = Directory.GetFiles(@"C:\Users\Vytautas\Desktop", "*.*", SearchOption.AllDirectories);
+            string[] allFiles = Directory.GetFiles(@"/Users/surkus/Desktop", "*.*", SearchOption.AllDirectories);
             for (int i = 0; i < allFiles.Length; i++)
             {
                 Console.WriteLine(allFiles[i]);
@@ -27,7 +30,8 @@ namespace cs36_paskaita_Async
             {
                 for (int w = 0; w < 10; w++)
                 {
-                    string[] allFiles = Directory.GetFiles(@"C:\Users\Vytautas\Desktop", "*.*", SearchOption.AllDirectories);
+                    //string[] allFiles = Directory.GetFiles(@"C:\Users\Vytautas\Desktop", "*.*", SearchOption.AllDirectories);
+                    string[] allFiles = Directory.GetFiles(@"/Users/surkus/Desktop", "*.*", SearchOption.AllDirectories);
                     for (int i = 0; i < allFiles.Length; i++)
                     {
                         Console.WriteLine(allFiles[i]);
